@@ -28,6 +28,8 @@ if (isNaN(parseInt(eta)) || isNaN(parseInt(distance))) {
 document.getElementById('age').innerHTML = eta;
 document.getElementById('discounted').innerHTML = discountedPrice.toFixed(2) + "€";
 
+document.getElementById('distance').innerHTML = distance + " km";
+
 // Generatore random di numero di sedile e numero del treno
 let seat = Math.floor(Math.random() * 100) + "A";
 let number = Math.floor(Math.random() * 1000000);
