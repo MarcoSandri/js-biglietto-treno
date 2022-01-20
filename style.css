@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+#error {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.ticket {
+    background-color: #e7f4d9;
+    width: 500px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    border-top: 30px solid #f1665d;
+    border-bottom: 30px solid #f1665d;
+    border-radius: 0 20px 20px 0;
+}
+
+/* Informazioni */
+
+.content {
+    width: 290px;
+    height: 240px;
+    margin-right: 25px;
+    padding-left: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.icon  {
+    text-align: center;
+    width: 125px;
+    height: 220px;
+    border-right: 4px solid black;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-around;
+    margin-left: 10px;
+}
+
+.icon .fa-qrcode {
+    font-size: 80px;
+    justify-self: flex-end;
+    padding-bottom: 20px;
+    border-bottom: 4px dashed black;
+}
+
+.icon .fa-barcode {
+    font-size: 100px;
+
+}
+
+.title {
+    padding-top: 10px;
+    font-size: 50px;
+    font-weight: 900;
+    padding-bottom: 10px;
+    border-bottom: 4px solid black;
+    
+}
+
+.person {
+    font-weight: 900;
+    color:#e7f4d9;
+    background-color: black;
+    font-size: 30px;
+    padding: 0 5px;
+    display: inline-block;
+    transform: rotate(270deg);
+    position: absolute;
+    left: -20px;
+    top: 140px;
+}
+
+.destination {
+    align-self: flex-end;
+    height: 50px;
+    width: 220px;
+    font-size: 20px;
+    font-weight: 500;
+    padding-top: 15px;
+}
+
+.info {
+    display: flex;
+    flex-wrap: wrap;
+    width: 220px;
+    align-self: flex-end;
+}
+
+.row  {
+    width: 100%;
+    display: flex;
+    border-bottom: 2px solid black;
+}
+
+.cell {
+    font-size: 16px;
+    font-weight: 600;
+    width: 50%;
+    height: 35px;
+    padding-top: 8px;
+    position: relative;
+}
+
+.cell.left {
+    border-left: 2px solid black;
+    padding-left: 10px;
+}
+
+
+.text {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+#oldprice {
+    font-size: 12px;
+    text-decoration: line-through;
+    color: rgb(151, 0, 0);
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+/* tagliando */
+.cutting {
+    background-color: #e7f4d9;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-top: 30px solid #f1665d;
+    border-bottom: 30px solid #f1665d;
+    border-radius: 20px;
+
+}
+
+.cut-line {
+    width: 50px;
+    height: 260px;
+    background-color: #f1665d;
+    position: absolute;
+    left: -25px;
+}
+
+.dotted {
+    height: 100%;
+    border-left: 10px dotted white;
+    position: absolute;
+    left: 20px;
+}
+
+.pill {
+    height: 115px;
+    width: 30px;
+    border-radius: 50vh;
+    background-color: white; 
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.cutting-content {
+    transform: rotate(270deg);
+}
+
+.cutting-content span{
+    margin-left: 30px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.cutting-icon {
+    font-size: 80px;
+    margin-bottom: 30px;
+}
+
+.cutting-icon .fa-qrcode {
+    padding-right: 15px;
+    border-right: 4px dashed black;
+}
+
+.cutting-destination {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-weight: 500;
+}

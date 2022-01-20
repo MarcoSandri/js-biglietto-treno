@@ -4,10 +4,67 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ffe1a1ce5d.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <title>Biglietto</title>
 </head>
 <body>
-    <h1 id="error">Il prezzo da pagare è di <span id="discounted"></span> euro</h1>
+
+    <h1 id="error"></h1>
+    <div class="container">
+        <div class="ticket">
+            <div class="icon">
+                <i class="fas fa-qrcode"></i>
+                <i class="fas fa-barcode"></i>
+            </div>
+            <div class="content">
+                <h1 class="title">TICKET</h1>
+                <span class="person">SINGLE</span>
+                <div class="destination">ROMA <i class="fas fa-long-arrow-alt-right"></i> MILANO</div>
+                <div class="info">
+                    <div class="row">
+                        <div class="cell">
+                            Età: 
+                            <span class="text"><span id="age"></span> anni</span>
+                        </div>
+                        <div class="cell left">
+                            Costo: 
+                            <span class="text"><span id="discounted"></span> <span id="oldprice"></span></span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="cell">
+                            Posto: 
+                            <span class="text"><span id="seat"></span></span>
+                        </div>
+                        <div class="cell left">
+                            n°: 
+                            <span class="text"><span id="number"></span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cutting">
+            <div class="cut-line">
+                <div class="dotted"></div>
+                <div class="pill"></div>
+            </div>
+            <div class="cutting-content">
+                <div class="cutting-destination">ROMA <i class="fas fa-long-arrow-alt-right"></i> MILANO</div>
+                <div class="cutting-icon">
+                    <i class="fas fa-qrcode"></i>
+                    <i class="fas fa-barcode"></i>
+                </div>
+                <span id="seat-cutting"></span>
+                <span id="number-cutting"></span>
+            </div>
+        </div>
+    </div>
+
     <script type="text/javascript" src="main.js"></script>
 
 </body>
