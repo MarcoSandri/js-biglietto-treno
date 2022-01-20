@@ -15,17 +15,16 @@ if (isNaN(parseInt(eta)) || isNaN(parseInt(distance))) {
     // Calcolo sconto
     if (eta < 18) {
         discountedPrice = price * 80 / 100;
-        document.getElementById('oldprice').innerHTML = price + "€";
+        document.getElementById('oldprice').innerHTML = price.toFixed(2) + "€";
     } else if (eta > 65) {
         discountedPrice = price * 60 / 100;
-        document.getElementById('oldprice').innerHTML = price + "€";
+        document.getElementById('oldprice').innerHTML = price.toFixed(2) + "€";
     } else {
         discountedPrice = price;
     }
 }
 
 // Restituisce sconto a schermo
-document.getElementById('discounted').innerHTML = discountedPrice.toFixed(2);
 document.getElementById('age').innerHTML = eta;
 document.getElementById('discounted').innerHTML = discountedPrice.toFixed(2) + "€";
 
